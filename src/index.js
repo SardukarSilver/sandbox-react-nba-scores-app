@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 
@@ -9,8 +10,10 @@ import RootStore from './store/RootStore';
 const stores = new RootStore();
 
 ReactDOM.render(
-  <StoreProvider stores={stores}>
-    <App />
-  </StoreProvider>,
+  <BrowserRouter>
+    <StoreProvider stores={stores}>
+      <App />
+    </StoreProvider>
+  </BrowserRouter>,
   document.getElementById('root')
 );

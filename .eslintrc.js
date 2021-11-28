@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 module.exports = {
   "extends": [
     "airbnb",
@@ -19,6 +20,7 @@ module.exports = {
     "jsx-a11y/click-events-have-key-events": 0,
     "jsx-a11y/no-static-element-interactions": 0,
     "camelcase": 0,
+    "import/no-cycle": 0,
     "max-len": [
       "warn",
       {
