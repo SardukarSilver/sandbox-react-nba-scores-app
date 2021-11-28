@@ -55,7 +55,7 @@ export default class RootStore {
 
   getTeamsData = () => {
     axios
-      .get('http://data.nba.net/prod/v2/2021/teams.json')
+      .get('https://data.nba.net/prod/v2/2021/teams.json')
       .then(({ data }) => {
         this.teamsData = data;
       })
